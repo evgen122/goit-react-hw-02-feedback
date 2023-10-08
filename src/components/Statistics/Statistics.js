@@ -1,5 +1,3 @@
-import { Notification } from 'components/Notification/Notification';
-
 export const Statistics = ({
   state: { good, neutral, bad },
   total,
