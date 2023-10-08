@@ -1,14 +1,13 @@
-export const FeedBack = ({ state, onChangeState, title }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div>
-      <h2>{title}</h2>
-      {Object.getOwnPropertyNames(state).map(i => {
+      {Object.getOwnPropertyNames(options).map(i => {
         return (
           <button
             key={[i]}
             name={[i]}
             type="button"
-            onClick={eve => onChangeState(eve.target.name)}
+            onClick={eve => onLeaveFeedback(eve.target.name)}
           >
             {[i]}
           </button>
